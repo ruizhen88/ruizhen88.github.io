@@ -38,16 +38,18 @@
     </div>
     <p id="last-update"></p>
   </div>
+  <script>
+    var map;
+    function initMap() {
+      map = new google.maps.Map(document.getElementById('map'), {
+        center: {lat: -34.397, lng: 150.644},
+        zoom: 8
+      });
+    }
+  </script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyABgV85sBbf2XEwpB1_Wk905NgmJlQ1yeE&callback=initMap"></script>
+  <script type="text/javascript">
+    document.getElementById("last-update").innerHTML = `<i>last update: ${Date()}</i>`
+  </script>
 </body>
-<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA0AYXiCugsdt2F_uKry3_HTZr2Ksrihmk&callback=initMap">
-  var map;
-  function initMap() {
-    map = new google.maps.Map(document.getElementById('map'), {
-      center: {lat: -34.397, lng: 150.644},
-      zoom: 8
-    });
-  };
-</script>
-<script type="text/javascript">
-  document.getElementById("last-update").innerHTML = `<i>last update: ${Date()}</i>`
-</script>
+</html>
