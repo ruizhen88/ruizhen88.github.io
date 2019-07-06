@@ -1,1 +1,40 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="./style.css">
+  <title>My Profile</title>
+</head>
+<body>
+  <div class="container">
+    <div class="content">
+      <img src="./cover.jpg" alt="">
+      <div class="left">
+        <h1>YEJIN JUNG</h1>
+        <h3>Full-stack Web Developer</h3>
+        <p>This page is made to aggregate my creative works that are spread around different platforms - instagram pictures, blog articles, youtube videos, twitter & facebook scribbles, programming portfolio, and so on.</p>
+        <p>This page is (will be) written in react/javascript, with a lot of help from bootstrap. Other than some react for the purpose of my practice, my goal is to make this page as simple as possible - that is, not to depend on any stack or framework besides pure html/css/js.</p>
+        <p id="last-update"></p>
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-linkedin"></i>
+        <i class="fas fa-feather-alt"></i>
+      </div>
+      <div class="right">
+        <div class="row">
+          <div class="card col-6-sm"></div>
+          <div class="card col-6-sm"></div>
+          <div class="card col-6-sm"></div>
+        </div>
+      </div>
+    </div>
+    <div class="map">My Journey</div>
+  </div>
+</body>
+<script type="text/javascript">
+  document.getElementById("last-update").innerHTML = `<i>last update: ${Date()}</i>`
+</script>
+</html>
